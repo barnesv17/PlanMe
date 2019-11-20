@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="searchPage.css">
     <link rel="stylesheet" href="searchPageSideNav.css">
     <link rel="stylesheet" href="header.css">
     <script type="text/javascript" src="searchPage.js"></script>
@@ -22,6 +23,7 @@
     </div>
 
     <div class="sidenav">
+      <div class="filter">Filter</div>
       <a><form>Location:<input type="text" name="location"></a>
       <a><form>Date:<input type="date" name="date"></a>
       <a><form>Capacity:<input type="text" name="capacity"></a>
@@ -36,7 +38,7 @@
       </select></a>
     </div>
 
-    <div id="topLine">
+    <div class="ViewSort">
       <p>Search Results</p>
       <a>View:<select id = "view">
                <option value = "1">20</option>

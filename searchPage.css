@@ -1,0 +1,12 @@
+.ViewSort {
+
+  width: 80%;
+  height: 100%;
+
+  position: relative;
+  left: 254px; /* move this "box" to the left */
+  top: 4px; /* move this "box" down */
+
+  display: inline-block;
+  background-color: pink;
+}
