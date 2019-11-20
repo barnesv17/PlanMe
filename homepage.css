@@ -5,3 +5,20 @@
   clear: left;
   text-align: right;
 }
+
+#box {
+  border-width: medium;
+  height: 200px;
+  width: 150%;
+}
+
+#searchBox {
+  border-width: medium;
+  height: 300px;
+  width: 150%;
+}
+
+input:focus{
+  border: 1px solid #a0acbf;
+  background-color: #fee;
+}
