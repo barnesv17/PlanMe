@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="searchPageSideNav.css">
+    <link rel="stylesheet" href="header.css">
+    <script type="text/javascript" src="searchPage.js"></script>
+    <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
+    <title>searchPage Virginia Barnes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+  </head>
+
+  <body>
+
+    <div class="header">
+      <a href="homepage.html" class="logo">Logo</a>
+      <div class="headerWords">
+        <a href="#">About Us</a>
+        <a href="#">FAQ's</a>
+        <a href="#">Policy</a>
+      </div>
+    </div>
+
+    <div class="sidenav">
+      <a><form>Location:<input type="text" name="location"></a>
+      <a><form>Date:<input type="date" name="date"></a>
+      <a><form>Capacity:<input type="text" name="capacity"></a>
+      <a>Price:<select id = "Price">
+               <option value = "1">$0-$100</option>
+               <option value = "2">$0-$200</option>
+               <option value = "3">$0-$300</option>
+               <option value = "4">$0-$400</option>
+               <option value = "5">$0-$500</option>
+               <option value = "6">$500+</option>
+
+      </select></a>
+    </div>
+
+    <div id="topLine">
+      <p>Search Results</p>
+      <a>View:<select id = "view">
+               <option value = "1">20</option>
+               <option value = "2">50</option>
+               <option value = "3">100</option>
+               <option value = "4">All</option>
+      </select></a>
+      <a>Sort:<select id = "sort">
+               <option value = "1">Distance</option>
+               <option value = "2">Price: Low to High</option>
+               <option value = "3">Price High to Low</option>
+      </select></a>
+    </div>
+
+    <div id ="searchOutput"></div>
+
+  </body>
+</html>

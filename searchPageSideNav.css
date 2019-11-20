@@ -1,0 +1,53 @@
+.sidenav {
+  width: 250px;
+  height: 500px;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left: 5px;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #000000;
+  display: block;
+}
+
+.sidenav input {
+  position: fixed;
+  left: 90px;
+  width: 148px;
+}
+
+.sidenav select {
+  position: fixed;
+  left: 90px;
+  width: 153px;
+  height: 23px;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* ---------------------------------------------------- */
+#topLine {
+  display: inline-block;
+  padding-left: 250px;
+}
+
+#searchOutput {
+  display: inline-block;
+  padding-left: 250px;
+}
