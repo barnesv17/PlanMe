@@ -25,7 +25,7 @@ function filterByPrice() {
         }
 
       });
-      
+
       if ( count == 0 ) {
         $('.searchOutput').html("No results found"); // after every lab is added, output to the html doc
       }
@@ -39,7 +39,6 @@ function filterByPrice() {
     }
   });
 }
-
 
 $(document).ready(function() {
   $.ajax({
@@ -64,6 +63,5 @@ $(document).ready(function() {
       alert('There was a problem: ' + msg.status + ' ' + msg.statusText);
     }
   });
-
 
 });

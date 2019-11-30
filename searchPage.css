@@ -39,11 +39,13 @@ body {
 
 .searchOutput #price {
   color: green;
+  font-size: 20px;
 }
 
 .searchOutput #title {
   font-weight: bold;
   text-decoration: underline;
+  font-size: 20px;
 }
 
 .searchOutput #website {
