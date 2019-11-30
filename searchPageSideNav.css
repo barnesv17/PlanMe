@@ -1,11 +1,10 @@
-.sidenav {
+.sidenav { /*the "box" of the sidenav */
   width: 250px;
   height: 500px;
   position: fixed;
   z-index: 1;
-  top: 100px;
-  left: 5px;
-  background-color: #f1f1f1;
+  top: 63px; /* move sidenav up or down */
+  /* background-color: #f1f1f1; */
   overflow-x: hidden;
   padding: 8px 0;
 }
@@ -31,23 +30,20 @@
   height: 23px;
 }
 
+.sidenav .filter {
+  text-align: center;
+  font-size: 25px;
+  text-decoration: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+
 .main {
   margin-left: 140px; /* Same width as the sidebar + left position in px */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 500px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-/* ---------------------------------------------------- */
-#topLine {
-  display: inline-block;
-  padding-left: 250px;
-}
-
-#searchOutput {
-  display: inline-block;
-  padding-left: 250px;
 }

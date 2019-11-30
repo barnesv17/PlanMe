@@ -2,7 +2,6 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -12,6 +11,7 @@ body {
 }
 
 .header a {
+  font: 'Playfair Display';
   float: left;
   color: black;
   text-align: center;
