@@ -26,9 +26,16 @@
     <div class="sidenav">
       <div class="filter">Filter</div>
       <!-- <a><form>Location:<input type="text" name="location"></a> -->
-      <a><form>Date:<input type="date" name="date"></a>
-      <a><form>Capacity:<input type="text" name="capacity"></a>
-      <a>Price:<select id = "Price" onchange="filterByPrice()">
+      <a><form>Date:<input type="date" id="Date" onchange="filter()"></a>
+      <a>Capacity:<select id = "Capacity" onchange="filter()">
+        <option value = "0">(select capacity)</option>
+        <option value = "1">100+</option>
+        <option value = "2">200+</option>
+        <option value = "3">300+</option>
+        <option value = "4">400+</option>
+        <option value = "5">500+</option>
+      </select></a>
+      <a>Price:<select id = "Price" onchange="filter()">
         <option value = "0">(select price)</option>
         <option value = "1">Below $100</option>
         <option value = "2">Below $200</option>
@@ -46,15 +53,18 @@
     <div class="topLine">
       <a id="search">Search Results<a>
       <a id = "ViewSort">
-        <a id="view">View:<select id = "view">
+        <!-- <a id="view">View:<select id = "view">
                  <option value = "1">20</option>
                  <option value = "2">50</option>
                  <option value = "3">100</option>
                  <option value = "4">All</option>
-        </select></a>
-        <a id="sort">Sort:<select id = "sort">
-                 <option value = "1">Price: Low to High</option>
-                 <option value = "2">Price High to Low</option>
+        </select></a> -->
+        <a id="sort">Sort: <select id ="Sort" onchange="filter()">
+          <option value = "0">(select sort)</option>
+          <option value = "3">A-Z</option>
+          <option value = "4">Z-A</option>
+          <option value = "1">Price: Low to High</option>
+          <option value = "2">Price: High to Low</option>
         </select></a>
       </a>
     </div>

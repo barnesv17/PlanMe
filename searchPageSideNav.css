@@ -13,8 +13,8 @@
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 15px;
-  color: #000000;
   display: block;
+  color: #e3e3e3;
 }
 
 .sidenav input {
@@ -31,6 +31,7 @@
 }
 
 .sidenav .filter {
+  color: #e3e3e3;
   text-align: center;
   font-size: 25px;
   text-decoration: none;

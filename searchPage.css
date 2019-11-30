@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #7395ae;
 }
 
 .topLine {
@@ -12,7 +13,7 @@ body {
 
 .topLine a {
   float: left;
-  color: black;
+  color: #e3e3e3;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -31,6 +32,7 @@ body {
 }
 
 .searchOutput {
+  color: #e3e3e3;
   /* background-color: #f1f1f1; */
   padding: 5px 389px; /*1:height, 2:width */
   top: 300px; /* move up or down */
@@ -49,13 +51,14 @@ body {
 }
 
 .searchOutput #website {
-  color: #00b1c4;
+  color: #b0e9ff;
   text-decoration: underline;
 }
 
 .searchOutput #item {
   align-items:center;
   padding: 10px 0px; /*1:height, 2:width */
+  border-bottom-style: solid;
 }
 
 img {
