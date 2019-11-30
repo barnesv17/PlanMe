@@ -22,18 +22,45 @@
     <div id="description">
       <h1>Plan your event with PlanMe</h1>
       <div id="box">
-        <h2>Short blurb on who we are</h2>
+        <h3>
+        Are you planning a big event? A party, formal, or wedding? Well, you have come to the
+        right place. PlanMe gives you the ability to filter through venues in Troy, NY. No more
+        calling venue after venue to see who is available. Filter venues based off price, capacity,
+        and available dates so you can find the ideal venue for your occasion.
+      </h3>
       </div>
     </div>
 
     <div id="searchBox">
-      <label class="field" for="location">Location:</label>
-      <div class="value"><input type="text" size="60" value="" name="location" id="location"/></div>
-      <label class="field" for="date">Date:</label>
-      <div class="value"><input type="text" size="60" value="" name="date" id="date"/></div>
-      <label class="field" for="capacity">Capacity:</label>
-      <div class="value"><input type="text" size="60" value="" name="capacity" id="capacity"/></div>
-      <button type="button" onclick="submit()">Go >>></button>
-
+      <!-- <label class="field" for="location">Location:</label>
+      <div class="value"><input type="text" size="60" value="" name="location" id="location"/></div> -->
+      <!-- <label class="field" for="date">Date:</label> -->
+      <a><form>Date:<input type="date" id="Date" onchange="filter()"></a><br><br>
+        <a>Capacity:<select id = "Capacity" onchange="filter()">
+          <option value = "0">(select capacity)</option>
+          <option value = "1">100+</option>
+          <option value = "2">200+</option>
+          <option value = "3">300+</option>
+          <option value = "4">400+</option>
+          <option value = "5">500+</option>
+        </select></a><br><br>
+        <a>Price:<select id = "Price" onchange="filter()">
+          <option value = "0">(select price)</option>
+          <option value = "1">Below $100</option>
+          <option value = "2">Below $200</option>
+          <option value = "3">Below $300</option>
+          <option value = "4">Below $400</option>
+          <option value = "5">Below $500</option>
+          <option value = "6">Below $600</option>
+          <option value = "7">Below $700</option>
+          <option value = "8">Below $800</option>
+          <option value = "9">Below $900</option>
+          <option value = "10">Below $1000</option>
+        </select></a><br><br>
+        <!-- <div class="value"><input type="text" size="60" value="" name="date" id="date"/></div> -->
+        <!-- <label class="field" for="capacity">Capacity:</label>
+        <div class="value"><input type="text" size="60" value="" name="capacity" id="capacity"/></div> -->
+        <button type="button" onclick="submit()">Go</button>
+      </div>
   </body>
 </html>

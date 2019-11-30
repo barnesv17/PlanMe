@@ -1,3 +1,7 @@
+body {
+  background-color: #7395ae;
+}
+
 .field {
   width: 120px;
   margin: 0 0.5em 0.5em 0;
@@ -10,15 +14,43 @@
   border-width: medium;
   height: 200px;
   width: 150%;
+  margin-left: 37.25%;
 }
 
 #searchBox {
   border-width: medium;
+  border-radius: 25px;
+  background-color: #557a95;
   height: 300px;
   width: 150%;
+  color: #e3e3e3;
+  font-size: 25px;
+  text-align: center;
+  width: 400px;
+  height: 275px;
+  padding: 35px 0;
+  margin-left: 37.25%;
 }
 
 input:focus{
   border: 1px solid #a0acbf;
   background-color: #fee;
+}
+
+h1 {
+  color: #e3e3e3;
+  margin-left: 37.25%;
+}
+
+h3 {
+  /* border: 3px solid grey; */
+  color: #e3e3e3;
+  width: 400px;
+  height: 175px;
+  text-align: center;
+}
+
+button {
+  font-size: 20px;
+  border-radius: 10px;
 }
