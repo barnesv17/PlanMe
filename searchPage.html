@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="searchPage.css">
     <link rel="stylesheet" href="searchPageSideNav.css">
     <link rel="stylesheet" href="header.css">
@@ -27,13 +28,18 @@
       <!-- <a><form>Location:<input type="text" name="location"></a> -->
       <a><form>Date:<input type="date" name="date"></a>
       <a><form>Capacity:<input type="text" name="capacity"></a>
-      <a>Price:<select id = "Price">
-        <option value = "6" onclick="filterPrice('1000000')">$500+</option>
-        <option value = "5" onclick="filterPrice('500')">$0-$500</option>
-        <option value = "4" onclick="filterPrice('400')">$0-$400</option>
-        <option value = "3" onclick="filterPrice('300')">$0-$300</option>
-        <option value = "2" onclick="filterPrice('200')">$0-$200</option>
-        <option value = "1" onclick="filterPrice('100')">$0-$100</option>
+      <a>Price:<select id = "Price" onchange="filterByPrice()">
+        <option value = "0">(select price)</option>
+        <option value = "1">Below $100</option>
+        <option value = "2">Below $200</option>
+        <option value = "3">Below $300</option>
+        <option value = "4">Below $400</option>
+        <option value = "5">Below $500</option>
+        <option value = "6">Below $600</option>
+        <option value = "7">Below $700</option>
+        <option value = "8">Below $800</option>
+        <option value = "9">Below $900</option>
+        <option value = "10">Below $1000</option>
       </select></a>
     </div>
 
@@ -47,9 +53,8 @@
                  <option value = "4">All</option>
         </select></a>
         <a id="sort">Sort:<select id = "sort">
-                 <option value = "1">Distance</option>
-                 <option value = "2">Price: Low to High</option>
-                 <option value = "3">Price High to Low</option>
+                 <option value = "1">Price: Low to High</option>
+                 <option value = "2">Price High to Low</option>
         </select></a>
       </a>
     </div>
