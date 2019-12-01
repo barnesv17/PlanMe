@@ -32,12 +32,27 @@ body {
   margin-left: 37.25%;
 }
 
+#Date {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#date {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 #Capacity {
   height: 23px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#capacity {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #Price {
   height: 23px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#price {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 input:focus{
@@ -48,6 +63,7 @@ input:focus{
 h1 {
   color: #e3e3e3;
   margin-left: 37.25%;
+  font-family: 'Playfair Display', serif;
 }
 
 h3 {
@@ -56,9 +72,11 @@ h3 {
   width: 400px;
   height: 175px;
   text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #button {
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   border-radius: 10px;
 }

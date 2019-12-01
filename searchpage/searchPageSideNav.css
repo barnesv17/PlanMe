@@ -4,12 +4,12 @@
   position: fixed;
   z-index: 1;
   top: 63px; /* move sidenav up or down */
-  /* background-color: #f1f1f1; */
   overflow-x: hidden;
   padding: 8px 0;
 }
 
 .sidenav a {
+  font-family: 'Source Sans Pro', sans-serif;
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 15px;
@@ -18,12 +18,14 @@
 }
 
 .sidenav input {
+  font-family: 'Source Sans Pro', sans-serif;
   position: fixed;
   left: 90px;
   width: 148px;
 }
 
 .sidenav select {
+  font-family: 'Source Sans Pro', sans-serif;
   position: fixed;
   left: 90px;
   width: 153px;
@@ -31,6 +33,7 @@
 }
 
 .sidenav .filter {
+  font-family: 'Playfair Display', serif;
   color: #e3e3e3;
   text-align: center;
   font-size: 25px;

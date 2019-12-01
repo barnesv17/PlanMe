@@ -11,6 +11,7 @@ body {
 }
 
 .topLine a {
+  font-family: 'Source Sans Pro', sans-serif;
   float: left;
   color: #e3e3e3;
   text-align: center;
@@ -32,9 +33,11 @@ body {
 
 #Sort {
   height: 23px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .searchOutput {
+  font-family: 'Source Sans Pro', sans-serif;
   color: #e3e3e3;
   padding: 5px 389px; /*1:height, 2:width */
   top: 300px; /* move up or down */
@@ -47,8 +50,8 @@ body {
 }
 
 .searchOutput #title {
+  font-family: 'Playfair Display', serif;
   font-weight: bold;
-  /* text-decoration: underline; */
   font-size: 20px;
 }
 

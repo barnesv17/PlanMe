@@ -1,20 +1,9 @@
 { "items": [
 	   {
-			"title": "Leona Grace Ballroom",
-			"link": "#",
-			"address": "545 Congress Street, Troy, NY 12180",
-			"number": "518-274-3014",
-			"website": "http://leonagraceballroom.com/cgi-sys/suspendedpage.cgi",
-			"media": "../resources/venues/leona.PNG",
-			"capacity": "250",
-			"bookedDates": ["2019-11-30", "2019-12-01", "2019-12-05", "2019-12-07", "2019-12-13"],
-			"price": "250"
-	   },
-	   {
 			"title": "Parti Events and Banquet Hall",
  			"link": "#",
  			"address": "309 3rd Ave #3208, Troy, NY 12182",
- 			"number": "518-763-3111",
+ 			"number": "(518) 763-3111",
  			"website": "http://www.partievents.com/",
  			"media": "../resources/venues/parti.PNG",
 			"capacity": "50",
@@ -25,7 +14,7 @@
 			"title": "Revolution Hall",
  			"link": "#",
  			"address": "425 River St, Troy, NY 12180",
- 			"number": "518-273-BEER(2337)",
+ 			"number": "(518) 273-BEER(2337)",
  			"website": "https://brownsbrewing.com/revolution-hall/",
  			"media": "../resources/venues/revolution.PNG",
 			"capacity": "100",
@@ -36,7 +25,7 @@
 			"title": "The Hangar on the Hudson",
  			"link": "#",
  			"address": "680 River St, Troy, NY 12180",
- 			"number": "518-272-9740",
+ 			"number": "(518) 272-9740",
  			"website": "https://www.thehangaronthehudson.com/",
  			"media": "../resources/venues/hangar.PNG",
 			"capacity": "200",
@@ -131,11 +120,22 @@
 			"bookedDates": ["2019-11-30", "2019-12-01", "2019-12-08", "2019-12-09", "2019-12-21"],
 			"price": "150"
 	   },
+		 {
+			"title": "Leona Grace Ballroom",
+			"link": "#",
+			"address": "545 Congress Street, Troy, NY 12180",
+			"number": "(518) 274-3014",
+			"website": "http://leonagraceballroom.com/cgi-sys/suspendedpage.cgi",
+			"media": "../resources/venues/leona.PNG",
+			"capacity": "250",
+			"bookedDates": ["2019-11-30", "2019-12-01", "2019-12-05", "2019-12-07", "2019-12-13"],
+			"price": "250"
+		 },
 	   {
 		 	"title": "Takk House",
 			"link": "#",
 			"address": "55 3rd Street, Troy, NY 12180",
-			"number": "518-626-8584",
+			"number": "(518) 626-8584",
 			"website": "http://www.takkhouse.com/",
 			"media": "../resources/venues/takk.PNG",
 			"capacity": "550",
