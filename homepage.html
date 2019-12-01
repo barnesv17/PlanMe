@@ -3,6 +3,8 @@
   <head>
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="homepage.css">
+    <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="homepage.js"></script>
     <title>Homepage Virginia Barnes</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
@@ -32,19 +34,19 @@
     </div>
 
     <div id="searchBox">
-      <!-- <label class="field" for="location">Location:</label>
-      <div class="value"><input type="text" size="60" value="" name="location" id="location"/></div> -->
-      <!-- <label class="field" for="date">Date:</label> -->
-      <a><form>Date:<input type="date" id="Date" onchange="filter()"></a><br><br>
-        <a>Capacity:<select id = "Capacity" onchange="filter()">
+      <form action="searchPage.html" method="GET">
+        <a>Date: <input type="date" name="Date"></a>
+        <br><br>
+        <a>Capacity: <select id="Capacity" name="Capacity">
           <option value = "0">(select capacity)</option>
           <option value = "1">100+</option>
           <option value = "2">200+</option>
           <option value = "3">300+</option>
           <option value = "4">400+</option>
           <option value = "5">500+</option>
-        </select></a><br><br>
-        <a>Price:<select id = "Price" onchange="filter()">
+        </select></a>
+        <br><br>
+        <a>Price: <select id ="Price" name="Price">
           <option value = "0">(select price)</option>
           <option value = "1">Below $100</option>
           <option value = "2">Below $200</option>
@@ -56,11 +58,10 @@
           <option value = "8">Below $800</option>
           <option value = "9">Below $900</option>
           <option value = "10">Below $1000</option>
-        </select></a><br><br>
-        <!-- <div class="value"><input type="text" size="60" value="" name="date" id="date"/></div> -->
-        <!-- <label class="field" for="capacity">Capacity:</label>
-        <div class="value"><input type="text" size="60" value="" name="capacity" id="capacity"/></div> -->
-        <button type="button" onclick="submit()">Go</button>
-      </div>
+        </select></a>
+        <br><br>
+        <input type="submit" value="Go"/>
+      </form>
+    </div>
   </body>
 </html>

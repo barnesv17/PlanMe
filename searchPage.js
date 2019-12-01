@@ -82,29 +82,26 @@ function filter() {
   });
 }
 
+// Taken from stackoverflow
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
 $(document).ready(function() {
-  $.ajax({
-    type: 'GET',
-    url: 'database.js',
-    dataType: 'json',
-    success: function(responseData, status){
-      var output = ''; // where the html we want to output will be stored
-      $.each(responseData.items, function(i, item) { // loop through each item in the json file
-        output += '<div id="item"><p>';
-        output += '<img src="' + item.media + '" alt="' + item.media + '"  />';
-        output += '<span id ="title">' + item.title + '</span><br>'; // add the title
-        output += '<span id="address">' + item.address + '</span><br>';
-        output += '<span id="number">' + item.number + '</span><br>';
-        output += '<span id="website">' + item.website + '</span><br>';
-        output += '<span id="price"> $' + item.price + '</span> per night,';
-        output += '<span id="capacity"> Capacity: ' + item.capacity + '</span>';
-        output += '</p></div>';
-      });
-      $('.searchOutput').html(output); // after every lab is added, output to the html doc
-    }, error: function(msg) {
-            // there was a problem
-      alert('There was a problem: ' + msg.status + ' ' + msg.statusText);
-    }
-  });
+  var dateOp = getParameterByName('Date'); // "lorem"
+  var priceOp = getParameterByName('Price'); // "" (present with empty value)
+  var capacityOp = getParameterByName('Capacity'); // "" (present with no value)
+
+  $("#Date").val(dateOp);
+  $("#Price").val(priceOp);
+  $("#Capacity").val(capacityOp);
+
+  filter();
 
 });
