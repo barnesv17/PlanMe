@@ -7,7 +7,7 @@
 			"website": "http://leonagraceballroom.com/cgi-sys/suspendedpage.cgi",
 			"media": "resources/leona.PNG",
 			"capacity": "250",
-			"bookedDates": ["2019-11-30", "2019-12-01"],
+			"bookedDates": ["2019-11-30", "2019-12-01", "2019-12-05", "2019-12-07", "2019-12-13"],
 			"price": "250"
 	   },
 	   {
@@ -18,7 +18,7 @@
  			"website": "http://www.partievents.com/",
  			"media": "resources/parti.PNG",
 			"capacity": "50",
-			"bookedDates": ["2019-11-30", "2019-12-01"],
+			"bookedDates": ["2019-11-30", "2019-12-01", "2019-12-14", "2019-12-10", "2019-12-09"],
 			"price": "150"
 	   },
 		 {
@@ -29,7 +29,7 @@
  			"website": "https://brownsbrewing.com/revolution-hall/",
  			"media": "resources/revolution.PNG",
 			"capacity": "100",
-			"bookedDates": ["2019-11-30", "2019-12-01"],
+			"bookedDates": ["2019-11-30", "2019-12-01", "2019-12-11", "2019-12-20", "2019-12-19"],
 			"price": "150"
 	   },
 		 {
@@ -40,7 +40,7 @@
  			"website": "https://www.thehangaronthehudson.com/",
  			"media": "resources/hangar.PNG",
 			"capacity": "200",
-			"bookedDates": ["2019-11-30", "2019-12-01"],
+			"bookedDates": ["2019-11-30", "2019-12-01", "2019-12-03", "2019-12-02", "2019-12-12"],
 			"price": "150"
 	   },
 		 {
@@ -51,7 +51,7 @@
  			"website": "http://www.franklinterraceballroom.com/",
  			"media": "resources/franklinTerrace.PNG",
 			"capacity": "500",
-			"bookedDates": ["2019-11-30", "2019-12-01"],
+			"bookedDates": ["2019-11-30", "2019-12-01", "2019-12-06", "2019-12-14", "2019-12-22"],
 			"price": "150"
 	   },
 		 {
@@ -62,7 +62,7 @@
  			"website": "http://www.franklinplaza.com/",
  			"media": "resources/franklinPlaza.PNG",
 			"capacity": "200",
-			"bookedDates": ["2019-11-30", "2019-12-01"],
+			"bookedDates": ["2019-11-30", "2019-12-01", "2019-12-14", "2019-12-03", "2019-12-02"],
 			"price": "150"
 	   },
 		 {
@@ -73,7 +73,7 @@
  			"website": "http://www.captainjpcruise.com/",
  			"media": "resources/captain.PNG",
 			"capacity": "100",
-			"bookedDates": ["2019-11-30", "2019-12-01"],
+			"bookedDates": ["2019-11-30", "2019-12-01", "2019-12-05", "2019-12-11", "2019-12-16"],
 			"price": "150"
 	   },
 		 {
@@ -84,7 +84,7 @@
  			"website": "Website not found",
  			"media": "resources/polish.PNG",
 			"capacity": "250",
-			"bookedDates": ["2019-11-30", "2019-12-01"],
+			"bookedDates": ["2019-11-30", "2019-12-01", "2019-12-29", "2019-12-31", "2019-12-30"],
 			"price": "150"
 	   },
 		 {
@@ -95,7 +95,7 @@
  			"website": "http://thevenuecohoes.com/",
  			"media": "resources/venue.PNG",
 			"capacity": "350",
-			"bookedDates": ["2019-11-30", "2019-12-01"],
+			"bookedDates": ["2019-11-30", "2019-12-01", "2019-12-23", "2019-12-25", "2019-12-21"],
 			"price": "150"
 	   },
 		 {
@@ -106,7 +106,7 @@
  			"website": "http://loft433.com/",
  			"media": "resources/loft.PNG",
 			"capacity": "450",
-			"bookedDates": ["2019-11-30", "2019-12-01"],
+			"bookedDates": ["2019-11-30", "2019-12-01", "2019-12-15", "2019-12-13", "2019-12-10"],
 			"price": "150"
 	   },
 		 {
@@ -117,7 +117,7 @@
  			"website": "http://www.troymusichall.org/",
  			"media": "resources/savings.PNG",
 			"capacity": "200",
-			"bookedDates": ["2019-11-30", "2019-12-01"],
+			"bookedDates": ["2019-11-30", "2019-12-01", "2019-12-21", "2019-12-27", "2019-12-26"],
 			"price": "150"
 	   },
 		 {
@@ -128,7 +128,7 @@
  			"website": "http://chapelandculturalcenter.net/",
  			"media": "resources/chapel.PNG",
 			"capacity": "80",
-			"bookedDates": ["2019-11-30", "2019-12-01"],
+			"bookedDates": ["2019-11-30", "2019-12-01", "2019-12-08", "2019-12-09", "2019-12-21"],
 			"price": "150"
 	   },
 	   {
@@ -139,7 +139,7 @@
 			"website": "http://www.takkhouse.com/",
 			"media": "resources/takk.PNG",
 			"capacity": "550",
-			"bookedDates": ["2019-11-30", "2019-12-01"],
+			"bookedDates": ["2019-11-30", "2019-12-01", "2019-12-02", "2019-12-19", "2019-12-31"],
 			"price": "550"
 	   }
   ] }

@@ -32,6 +32,14 @@ body {
   margin-left: 37.25%;
 }
 
+#Capacity {
+  height: 23px;
+}
+
+#Price {
+  height: 23px;
+}
+
 input:focus{
   border: 1px solid #a0acbf;
   background-color: #fee;
@@ -50,7 +58,7 @@ h3 {
   text-align: center;
 }
 
-button {
+#button {
   font-size: 20px;
   border-radius: 10px;
 }

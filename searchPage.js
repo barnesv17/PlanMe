@@ -61,7 +61,12 @@ function filter() {
             output += '<span id ="title">' + item.title + '</span><br>'; // add the title
             output += '<span id="address">' + item.address + '</span><br>';
             output += '<span id="number">' + item.number + '</span><br>';
-            output += '<a href="' + item.website + '"><span id="website">' + item.website + '</span></a><br>';
+            if ( item.website == "Website not found" ) {
+              output += item.website + '<br>';
+            }
+            else {
+                output += '<a href="' + item.website + '"><span id="website">' + item.website + '</span></a><br>';
+            }
             output += '<span id="price"> $' + item.price + '</span> per night,';
             output += '<span id="capacity"> Capacity: ' + item.capacity + '</span>';
             output += '</p></div>';
@@ -71,9 +76,11 @@ function filter() {
 
       if ( count == 0 ) {
         $('.searchOutput').html("No results found"); // after every lab is added, output to the html doc
+        $('.resultCount').html("");
       }
       else {
         $('.searchOutput').html(output); // after every lab is added, output to the html doc
+        $('.resultCount').html("Displaying " + count + " results");
       }
     }, error: function(msg) {
             // there was a problem
