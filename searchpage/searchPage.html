@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="searchPage.css">
+    <link rel="stylesheet" href="searchPageSideNav.css">
+    <link rel="stylesheet" href="header.css">
+    <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="searchPage.js"></script>
+    <title>searchPage Virginia Barnes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+  </head>
+
+  <body>
+
+    <div class="header">
+      <a href="homepage.html" class="logo">PlanMe</a>
+      <div class="headerWords">
+        <a href="about.html">About Us</a>
+      </div>
+    </div>
+
+    <div class="sidenav">
+      <div class="filter">Filter</div>
+      <!-- <a><form>Location:<input type="text" name="location"></a> -->
+      <a><form>Date:<input type="date" id="Date" onchange="filter()"></a>
+      <a>Capacity:<select id = "Capacity" onchange="filter()">
+        <option value = "0">(select capacity)</option>
+        <option value = "1">100+</option>
+        <option value = "2">200+</option>
+        <option value = "3">300+</option>
+        <option value = "4">400+</option>
+        <option value = "5">500+</option>
+      </select></a>
+      <a>Price:<select id = "Price" onchange="filter()">
+        <option value = "0">(select price)</option>
+        <option value = "1">Below $100</option>
+        <option value = "2">Below $200</option>
+        <option value = "3">Below $300</option>
+        <option value = "4">Below $400</option>
+        <option value = "5">Below $500</option>
+        <option value = "6">Below $600</option>
+        <option value = "7">Below $700</option>
+        <option value = "8">Below $800</option>
+        <option value = "9">Below $900</option>
+        <option value = "10">Below $1000</option>
+      </select></a>
+    </div>
+
+    <div class="topLine">
+      <a id="search"><div class="resultCount"></div><a>
+      <a id = "ViewSort">
+        <a id="sort">Sort: <select id ="Sort" onchange="filter()">
+          <option value = "0">(select sort)</option>
+          <option value = "3">A-Z</option>
+          <option value = "4">Z-A</option>
+          <option value = "1">Price: Low to High</option>
+          <option value = "2">Price: High to Low</option>
+        </select></a>
+      </a>
+    </div>
+
+    <div class ="searchOutput"></div>
+
+  </body>
+</html>
