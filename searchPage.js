@@ -1,8 +1,8 @@
 function filter() {
   var priceOp = document.getElementById("Price").value;
-  var sortOp = document.getElementById("Sort").value;
   var dateOp = document.getElementById("Date").value; // yyyy-mm-dd
   var capacityOp = document.getElementById("Capacity").value;
+  var sortOp = document.getElementById("Sort").value;
 
   $.ajax({
     type: 'GET',
@@ -61,7 +61,7 @@ function filter() {
             output += '<span id ="title">' + item.title + '</span><br>'; // add the title
             output += '<span id="address">' + item.address + '</span><br>';
             output += '<span id="number">' + item.number + '</span><br>';
-            output += '<span id="website">' + item.website + '</span><br>';
+            output += '<a href="' + item.website + '"><span id="website">' + item.website + '</span></a><br>';
             output += '<span id="price"> $' + item.price + '</span> per night,';
             output += '<span id="capacity"> Capacity: ' + item.capacity + '</span>';
             output += '</p></div>';
