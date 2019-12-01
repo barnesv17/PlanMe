@@ -31,6 +31,10 @@ body {
   float: right;
 }
 
+#Date {
+  width: 153px;
+}
+
 .searchOutput {
   color: #e3e3e3;
   /* background-color: #f1f1f1; */
