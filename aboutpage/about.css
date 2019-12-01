@@ -1,0 +1,31 @@
+body {
+  background-color: #7395ae;
+}
+
+.field {
+  width: 120px;
+  margin: 0 0.5em 0.5em 0;
+  float: left;
+  clear: left;
+  text-align: right;
+}
+
+#box {
+  border-width: medium;
+  height: 200px;
+  width: 150%;
+  margin-left: 37.25%;
+}
+
+h1 {
+  color: #e3e3e3;
+  margin-left: 46%;
+}
+
+h3 {
+  /* border: 3px solid grey; */
+  color: #e3e3e3;
+  width: 400px;
+  height: 175px;
+  text-align: center;
+}

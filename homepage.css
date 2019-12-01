@@ -1,3 +1,7 @@
+body {
+  background-color: #7395ae;
+}
+
 .field {
   width: 80px;
   margin-top: 10px;
@@ -44,4 +48,25 @@
 input:focus{
   border: 1px solid #a0acbf;
   background-color: #fee;
+}
+
+h1 {
+  color: #e3e3e3;
+  margin-left: 37.25%;
+  font-family: 'Playfair Display', serif;
+}
+
+h3 {
+  /* border: 3px solid grey; */
+  color: #e3e3e3;
+  width: 400px;
+  height: 175px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#button {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
 }
