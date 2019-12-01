@@ -6,7 +6,7 @@ function filter() {
 
   $.ajax({
     type: 'GET',
-    url: 'database.js',
+    url: '../resources/database.js',
     dataType: 'json',
     success: function(responseData, status){
 
