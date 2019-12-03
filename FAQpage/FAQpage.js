@@ -3,7 +3,7 @@
 $(document).ready(function() {
 
   // Excercise 1: Flickr feed
-  var option=1;
+  var option=0;
 
 	if (option==1) {
 
