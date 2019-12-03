@@ -1,28 +1,32 @@
-var slideIndex = 1;
-showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+$(document).ready(function() {
+  
+    $.ajax({
+      type: "GET",
+      url: "../resources/database.json",
+      dataType: "json",
+      success: function(responseData, status){
+        var output = "";  
+        $.each(responseData.items, function(i, item) {
+          output += '<div class="column">';
+          output += '<div class="content">';
+          output += '<img src="'+item.media+'" alt="'+item.title+'" style="100%"">';
+          output += '<h3>'+ item.title +'</h3>';
+          output += '<p>';
+          output += 'Price: ' + item.price;
+          output += 'Address: ' + item.address;
+          output += 'Capacity: ' + item.capacity;
+          output += 'Website: ' + item.website;
+          output += '</p>';
+          output += '</div>';
+          output += '</div>';
+        });
+        
+        $('#row').html(output);
+      }, error: function(msg) {
+              // there was a problem
+        alert("There was a problem: " + msg.status + " " + msg.statusText);
+      }
+    });
+  });
+   
