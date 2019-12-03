@@ -12,11 +12,11 @@ $(document).ready(function() {
    	 	url: "FAQdatabase.js",
    	 	dataType: "json",
    	 	success: function(responseData, status){
-   	  	var output = "<ul>";
+   	  	var output = "<p2>";
     	 	$.each(responseData.items, function(i, item) {
        		output += item.question + item.answer
       	});
-      	output += "</ul>";
+      	output += "</p2>";
       	$('#questionAnswer').html(output);
     	}, error: function(msg) {
       				// there was a problem
