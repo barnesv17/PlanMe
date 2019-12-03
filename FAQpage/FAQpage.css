@@ -27,7 +27,7 @@ body {
   height: 400px;
 }
 
-.questionAnswer {
+#questionAnswer {
   margin-bottom: 20px;
 }
 
