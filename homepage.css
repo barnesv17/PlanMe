@@ -19,11 +19,11 @@ body {
 #box {
   border-style: solid;
   border-width: medium;
-  height: 200px;
-  width: 400px;
+  height: 225px;
+  width: 450px;
   float: left;
-  margin-top: 10px;
-  padding-left: 5px;
+  margin-top: 15px;
+  padding-left: 10px;
 }
 
 #goButton{
@@ -60,7 +60,6 @@ h3 {
   /* border: 3px solid grey; */
   color: #e3e3e3;
   width: 400px;
-  height: 175px;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
 }
