@@ -1,19 +1,18 @@
 function filter() {
-  var priceOp = document.getElementById("Price").value;
-  var dateOp = document.getElementById("Date").value; // yyyy-mm-dd
-  var capacityOp = document.getElementById("Capacity").value;
-  var sortOp = document.getElementById("Sort").value;
+  var priceOp = document.getElementById("Price").value;                         // Extract the user's price from the search page (could be prefilled from homepage)
+  var dateOp = document.getElementById("Date").value;                           // Extract the user's date from the search page (could be prefilled from homepage)
+  var capacityOp = document.getElementById("Capacity").value;                   // Extract the user's capcity from the search page (could be prefilled from homepage)
+  var sortOp = document.getElementById("Sort").value;                           // Extract the user's sort option from the search page
 
-  $.ajax({
-    type: 'GET',
-    url: '../resources/database.js',
-    dataType: 'json',
-    success: function(responseData, status){
+  $.ajax({                                                                      // API for reading JSON files
+    type: 'GET',                                                                // GET Request
+    url: '../resources/database.js',                                            // The path to the JSON file containing a list of venues
+    dataType: 'json',                                                           // The file is of the type JSON
+    success: function(responseData, status){                                    // On success...
 
-      var availableDate = true;
-      var x = 0;
-      var count = 0;
-      var output = ''; // where the html we want to output will be stored
+      var availableDate = true;                                                 // Boolean to keep track of if the date entered by the user is an available date for a venue
+      var count = 0;                                                            // Count to keep track of how many venues have been displayed to the user
+      var output = '';                                                          // String to store the HTML we want to output
       $('.searchOutput').html(output);
 
       if ( sortOp == 1 ) { // sort price: low to high
@@ -47,7 +46,7 @@ function filter() {
 
       $.each(responseData.items, function(i, item) { // loop through each item in the json file
         availableDate = true;
-        for ( x=0; x < item.bookedDates.length; x++ ) { // Check if day is available
+        for ( var x=0; x < item.bookedDates.length; x++ ) { // Check if day is available
           if ( item.bookedDates[x] == dateOp ) {
             availableDate = false;
           }
