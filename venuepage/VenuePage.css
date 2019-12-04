@@ -2,13 +2,52 @@ body {
   background-color: #7395ae;
 }
 
+.venueOutput {
+  margin-top: 8%;
+  margin-left: 3%;
+}
+
+img {
+  width:750px;
+  height: 400px;
+  float: left;
+}
+
 h1 {
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   color: #e3e3e3;
+  text-align: center;
 }
 
-img {
-  width: 500px;
-  height: 500px;
+p {
+  color: #e3e3e3;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+a {
+  color: #b0e9ff;
+}
+
+#text {
+  margin-left: 3%;
+  /* background-color: blue; */
+}
+
+#price {
+  color: #7bd96c;
+  font-size: 20px;
+}
+
+#website {
+  color: #b0e9ff;
+  text-decoration: underline;
+}
+
+#item {
+  align-items:center;
+  padding: 10px 0px; /*1:height, 2:width */
+  border-bottom-style: solid;
 }

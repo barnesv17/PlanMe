@@ -22,21 +22,25 @@ $(document).ready(function() {
       var output = "";
       $.each(responseData.items, function(i, item) {
         if ( item.title == venueName ) {
-
           new_title = item.title.replace(/_/g, ' ');
 
-          output += '<div class="column">';
-          output += '<div class="content">';
-          output += '<h1>'+ new_title +'</h1>';
-          output += '<img src="'+item.media+'" alt="'+item.title+'" style="100%"">';
+          output += '<img src="' + item.media + '" alt="' + item.media + '"  />';
+
+          output += "<div id = 'text'>";
+          output += '<h1 id ="title">' + new_title + '</h1>'; // add the title
           output += '<p>';
-          output += 'Price: ' + item.price;
-          output += 'Address: ' + item.address;
-          output += 'Capacity: ' + item.capacity;
-          output += 'Website: ' + item.website;
-          output += '</p>';
-          output += '</div>';
-          output += '</div>';
+          output += '<span id="address">Address: ' + item.address + '</span><br><br>';
+          output += '<span id="number">Phone Number: ' + item.number + '</span><br><br>';
+          if ( item.website == "Website not found" ) {
+            output += item.website + '<br><br>';
+          }
+          else {
+              output += 'Website: <span id="website"><a href="' + item.website + '">' + item.website + '</span></a><br><br>';
+          }
+          output += 'Price: <span id="price">$' + item.price + '</span> per night,';
+          output += '<span id="capacity"> Capacity : ' + item.capacity + '</span>';
+          output += '</p></div>';
+
         }
       });
       $('.venueOutput').html(output);

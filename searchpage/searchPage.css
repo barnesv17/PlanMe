@@ -56,7 +56,6 @@ body {
 }
 
 .searchOutput #website {
-  color: #b0e9ff;
   text-decoration: underline;
 }
 
@@ -73,4 +72,17 @@ img {
   height: 100px;
 }
 
+a {
+  color: #b0e9ff;
+}
+a:visited {
+  color: #b0e9ff;
+}
+
+input:focus{
+  border: 1px solid #a0acbf;
+}
+
+select:focus{
+  border: 1px solid #a0acbf;
 }
