@@ -1,6 +1,6 @@
 { "items": [
 	   {
-			"title": "Parti Events and Banquet Hall",
+			"title": "Parti_Events_and_Banquet_Hall",
  			"link": "#",
  			"address": "309 3rd Ave #3208, Troy, NY 12182",
  			"number": "(518) 763-3111",
@@ -12,7 +12,7 @@
 			"image": "parti.PNG"
 	   },
 		 {
-			"title": "Revolution Hall",
+			"title": "Revolution_Hall",
  			"link": "#",
  			"address": "425 River St, Troy, NY 12180",
  			"number": "(518) 273-BEER(2337)",
@@ -24,7 +24,7 @@
 			"image": "revolution.PNG"
 	   },
 		 {
-			"title": "The Hangar on the Hudson",
+			"title": "The_Hangar_on_the_Hudson",
  			"link": "#",
  			"address": "680 River St, Troy, NY 12180",
  			"number": "(518) 272-9740",
@@ -36,7 +36,7 @@
 			"image": "hangar.PNG"
 	   },
 		 {
-			"title": "Franklin Terrace Ballroom",
+			"title": "Franklin_Terrace_Ballroom",
  			"link": "#",
  			"address": "126 Campbell Ave #5726, Troy, NY 12180",
  			"number": "(518) 274-3421",
@@ -48,7 +48,7 @@
 			"image": "franklinTerrace.PNG"
 	   },
 		 {
-			"title": "Franklin Plaza",
+			"title": "Franklin_Plaza",
  			"link": "#",
  			"address": "4 4th St, Troy, NY 12180",
  			"number": "(518) 270-9622",
@@ -60,7 +60,7 @@
 			"image": "franklinplaza.PNG"
 	   },
 		 {
-			"title": "Captain J P Cruise Lines",
+			"title": "Captain_JP_Cruise_Lines",
  			"link": "#",
  			"address": "278 River St, Troy, NY 12180",
  			"number": "(518) 270-1901",
@@ -72,7 +72,7 @@
 			"image": "captain.PNG"
 	   },
 		 {
-			"title": "Polish American Club Inc",
+			"title": "Polish_American_Club_Inc",
  			"link": "#",
  			"address": "507 1st St, Troy, NY 12180",
  			"number": "(518) 272-2676",
@@ -83,7 +83,7 @@
 			"price": "150"
 	   },
 		 {
-			"title": "The Venue",
+			"title": "The_Venue",
  			"link": "#",
  			"address": "65 Congress St, Cohoes, NY 12047",
  			"number": "(518) 222-9481",
@@ -95,7 +95,7 @@
 			"image": "venue.PNG"
 	   },
 		 {
-			"title": "Loft 433",
+			"title": "Loft_433",
  			"link": "#",
  			"address": "433 River St, Troy, NY 12180",
  			"number": "(518) 375-2306",
@@ -107,7 +107,7 @@
 			"image": "loft.PNG"
 	   },
 		 {
-			"title": "Troy Savings Bank Music Hall",
+			"title": "Troy_Savings_Bank_Music_Hall",
  			"link": "#",
  			"address": "30 2nd St, Troy, NY 12180",
  			"number": "(518) 273-0038",
@@ -119,7 +119,7 @@
 			"image": "savings.PNG"
 	   },
 		 {
-			"title": "Chapel + Cultural Center",
+			"title": "Chapel_and_Cultural_Center",
  			"link": "#",
  			"address": "2125 Burdett Ave, Troy, NY 12180",
  			"number": "(518) 274-7793",
@@ -131,7 +131,7 @@
 			"image": "chapel.PNG"
 	   },
 		 {
-			"title": "Leona Grace Ballroom",
+			"title": "Leona_Grace_Ballroom",
 			"link": "#",
 			"address": "545 Congress Street, Troy, NY 12180",
 			"number": "(518) 274-3014",
@@ -143,7 +143,7 @@
 			"image": "leona.PNG"
 		 },
 	   {
-		 	"title": "Takk House",
+		 	"title": "Takk_House",
 			"link": "#",
 			"address": "55 3rd Street, Troy, NY 12180",
 			"number": "(518) 626-8584",

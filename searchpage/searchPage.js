@@ -56,11 +56,22 @@ function filter() {
         if ( (priceOp == 0 || item.price < (priceOp * 100)) && availableDate == true ) { // check that the venues are in price range
           if ( capacityOp == 0 || (item.capacity > (capacityOp * 100)) ) {
             count += 1;
+
+
+
+
+            var url = 'http://localhost/iit/termProject/PlanMe/venuepage/VenuePage.html?Title=' + item.title;
+
             output += '<div id="item"><p>';
+
             output += '<img src="' + item.media + '" alt="' + item.media + '"  />';
-            output += '<span id ="title">' + item.title + '</span><br>'; // add the title
+
+            output += '<a href='+ url +'><span id ="title">' + item.title + '</span><br></a>'; // add the title
+
             output += '<span id="address">' + item.address + '</span><br>';
+
             output += '<span id="number">' + item.number + '</span><br>';
+
             if ( item.website == "Website not found" ) {
               output += item.website + '<br>';
             }
@@ -68,8 +79,11 @@ function filter() {
                 output += '<a href="' + item.website + '"><span id="website">' + item.website + '</span></a><br>';
             }
             output += '<span id="price"> $' + item.price + '</span> per night,';
+
             output += '<span id="capacity"> Capacity: ' + item.capacity + '</span>';
+
             output += '</p></div>';
+
           }
         }
       });
