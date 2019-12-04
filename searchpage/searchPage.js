@@ -65,13 +65,9 @@ function filter() {
             output += '<div id="item"><p>';
 
             output += '<img src="' + item.media + '" alt="' + item.media + '"  />';
-<<<<<<< HEAD
 
             output += '<a href='+ url +'><span id ="title">' + item.title + '</span><br></a>'; // add the title
 
-=======
-            output += '<a href ="../venuepage/VenuePage.html" span id ="title">' + item.title + '</span><br></a>'; // add the title
->>>>>>> 8b96d4352ae136d6f0f5a1d2ddae9a0b2a81629b
             output += '<span id="address">' + item.address + '</span><br>';
 
             output += '<span id="number">' + item.number + '</span><br>';
