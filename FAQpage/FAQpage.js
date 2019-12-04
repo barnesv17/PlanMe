@@ -13,7 +13,6 @@ $(document).ready(function() {
     	 	$.each(responseData.items, function(i, item) {
        		output += '<p2>' + item.question + '<br>' + item.answer + '<br>' + '</p2>' + '<hr>';
       	});
-      	output += "</p2>";
       	$('#questionAnswer').html(output);
     	}, error: function(msg) {
       				// there was a problem
