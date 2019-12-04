@@ -61,12 +61,13 @@ function filter() {
 
 
             var url = 'http://localhost/iit/termProject/PlanMe/venuepage/VenuePage.html?Title=' + item.title;
+            new_title = item.title.replace(/_/g, ' ');
 
             output += '<div id="item"><p>';
 
             output += '<img src="' + item.media + '" alt="' + item.media + '"  />';
 
-            output += '<a href='+ url +'><span id ="title">' + item.title + '</span><br></a>'; // add the title
+            output += '<a href='+ url +'><span id ="title">' + new_title + '</span><br></a>'; // add the title
 
             output += '<span id="address">' + item.address + '</span><br>';
 
