@@ -2,12 +2,12 @@
 body {
   background-color: #7395ae;
 }
-/**/
+/*changing the background color to light blue*/
 .FAQ {
   text-align: center;
   font-size: 2em;
 }
-/**/
+/*styling and formating the header*/
 .searchBar {
   border-style: solid;
   border-width: medium;
@@ -17,31 +17,31 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/**/
+/*styling the search Bar to have it be in the middle of the page and certain size*/
 .searchButton {
   float: right;
 }
-/**/
+/*keep the search icon on the right of the box*/
 .scroller {
   overflow-y: scroll;
   width: auto;
   height: 400px;
 }
-/**/
+/*making the scroller for the FAQ*/
 #questionAnswer {
   margin-bottom: 20px;
 }
-/**/
+/*padding in between each FAQ*/
 input:focus{
   border: 1px solid #a0acbf;
   background-color: #fee;
 }
-/**/
+/*change color and border when clicking on */
 h1 {
   color: #e3e3e3;
   font-family: 'Playfair Display', serif;
 }
-/**/
+/*redefining h1 and changing its color and font*/
 p1 {
   color: #e3e3e3;
   width: 400px;
@@ -49,7 +49,7 @@ p1 {
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
 }
-/**/
+/*redefining p1 to have it align in the middle, change color etc.*/
 p2 {
   color: #e3e3e3;
   width: 400px;
@@ -58,4 +58,4 @@ p2 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: large;
 }
-/**/
+/*redefining the p2 tag and changing the size, color etc.*/
