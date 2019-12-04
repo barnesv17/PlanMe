@@ -37,7 +37,7 @@ $(document).ready(function() {
           else {
               output += 'Website: <span id="website"><a href="' + item.website + '">' + item.website + '</span></a><br><br>';
           }
-          output += '<span id="price">Price: $' + item.price + '</span> per night,';
+          output += 'Price: <span id="price">$' + item.price + '</span> per night,';
           output += '<span id="capacity"> Capacity : ' + item.capacity + '</span>';
           output += '</p></div>';
 
