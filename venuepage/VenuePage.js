@@ -22,7 +22,7 @@ $(document).ready(function() {
           output += '</div>';
         });
         
-        $('#row').html(output);
+        $('.row').html(output);
       }, error: function(msg) {
               // there was a problem
         alert("There was a problem: " + msg.status + " " + msg.statusText);

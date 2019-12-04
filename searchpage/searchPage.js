@@ -58,7 +58,7 @@ function filter() {
             count += 1;
             output += '<div id="item"><p>';
             output += '<img src="' + item.media + '" alt="' + item.media + '"  />';
-            output += '<span id ="title">' + item.title + '</span><br>'; // add the title
+            output += '<a href ="../venuepage/VenuePage.html" span id ="title">' + item.title + '</span><br></a>'; // add the title
             output += '<span id="address">' + item.address + '</span><br>';
             output += '<span id="number">' + item.number + '</span><br>';
             if ( item.website == "Website not found" ) {

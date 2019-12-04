@@ -60,4 +60,13 @@ h1 {
   .column {
     width: 100%;
   }
+
+img {
+max-height: 16px;
+max-width: 8px;
+
+
+
+
+}
 }
