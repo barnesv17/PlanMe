@@ -1,4 +1,6 @@
-$(document).ready(function() {
+
+
+$(document).ready(function() { //runs when the page is loaded
 
   var option=1;
 
@@ -8,8 +10,8 @@ $(document).ready(function() {
    	 	type: "GET",
    	 	url: "FAQdatabase.js",
    	 	dataType: "json",
-   	 	success: function(responseData, status){
-   	  	var output = "";
+   	 	success: function(responseData, status){ //this code runs if there are no errors
+        var output = "";
     	 	$.each(responseData.items, function(i, item) { //searching through each item in the database of FAQ (FAQdatabase.js)
        		output += '<p2>' + item.question + '<br>' + item.answer + '<br>' + '</p2>' + '<hr>';
           //code that is going to go into the html file and create the format needed
