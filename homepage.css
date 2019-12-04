@@ -33,12 +33,16 @@ body {
 
 #searchBox {
   border-style: solid;
+  border-color: #bababa;
   border-width: medium;
+  border-radius: 25px;
+  background-color: #e3e3e3;
   height: 200px;
   width: 400px;
   margin-right: 200px;
   margin-top: 10px;
   float: right;
+  text-align: center;
 }
 
 .value {
@@ -49,6 +53,11 @@ input:focus{
   border: 1px solid #a0acbf;
   background-color: #fee;
 }
+
+#slogan {
+  font-size: 30px;
+}
+
 
 h1 {
   color: #e3e3e3;
