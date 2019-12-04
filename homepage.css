@@ -1,6 +1,7 @@
 body {
   background-color: #7395ae;
 }
+/*changing background to light blue*/
 
 .field {
   width: 80px;
@@ -10,11 +11,13 @@ body {
   clear: left;
   text-align: right;
 }
+/*styling the inout fields to input date, capacity and price range*/
 
 #description{
   margin-top: 150px;
   margin-left: 250px;
 }
+/*layout for the description box*/
 
 #box {
   #border-style: solid;
@@ -25,11 +28,7 @@ body {
   margin-top: 15px;
   padding-left: 10px;
 }
-
-#goButton{
-  margin-left: 120px;
-  margin-top: 10px;
-}
+/*styling for the description box*/
 
 #searchBox {
   border-style: solid;
@@ -40,32 +39,37 @@ body {
   margin-top: 10px;
   float: right;
 }
+/*styling the search box and layout*/
 
 .value {
   margin-top: 10px;
 }
+/*spacing in between each input field in the search box*/
 
 input:focus{
   border: 1px solid #a0acbf;
   background-color: #fee;
 }
+/*changes the color of the input field when user selects the field*/
 
 h1 {
   color: #e3e3e3;
   margin-left: 37.25%;
   font-family: 'Playfair Display', serif;
 }
+/*redefining h1tag, changing font, color and spacing*/
 
 h3 {
-  /* border: 3px solid grey; */
   color: #e3e3e3;
   width: 400px;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
 }
+/*redefining h3tag, changing font, color, width and text align*/
 
 #button {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   border-radius: 10px;
 }
+/*styling the go button in the searchBox*/
