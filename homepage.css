@@ -17,8 +17,8 @@ body {
 }
 
 #box {
-  border-style: solid;
-  border-width: medium;
+  #border-style: solid;
+  #border-width: medium;
   height: 225px;
   width: 450px;
   float: left;
