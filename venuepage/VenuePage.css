@@ -9,6 +9,19 @@ h1 {
 }
 
 img {
-  width: 500px;
-  height: 500px;
+  width:700px;
+  height: 400px;
+  float: left;
+}
+
+p {
+  background-color: blue;
+}
+
+h1 {
+
+}
+
+.venueOutput {
+  margin-top: 8%;
 }
