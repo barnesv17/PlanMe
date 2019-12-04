@@ -1,24 +1,43 @@
 
+body {
+  background-color: #7395ae;
+}
+
 .FAQ {
-  text-align: middle;
+  text-align: center;
   font-size: 2em;
 }
 
 .searchBar {
-  padding-left: 50px;
-  padding-top: 20px;
-  margin-left: 50px;
-  margin-top: 20px;
-  align-items: center;
+  border-style: solid;
+  border-width: medium;
+  text-align: left;
+  width: 400px;
+  padding: 5px 10px 5px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-top: 1px solid black;
+}
+.searchButton {
+  float: right;
 }
 
 .scroller {
-  overflow:scroll;
+  overflow-y: scroll;
+  width: auto;
+  height: 400px;
 }
 
-.questionAnswer {
-  padding
-  float: left;
+#questionAnswer {
+  margin-bottom: 20px;
 }
 
 input:focus{
@@ -28,15 +47,24 @@ input:focus{
 
 h1 {
   color: #e3e3e3;
-  margin-left: 37.25%;
   font-family: 'Playfair Display', serif;
 }
 
-h3 {
+p1 {
   /* border: 3px solid grey; */
   color: #e3e3e3;
   width: 400px;
   height: 175px;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+p2 {
+  /* border: 3px solid grey; */
+  color: #e3e3e3;
+  width: 400px;
+  height: 175px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: large;
 }
