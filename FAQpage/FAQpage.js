@@ -1,9 +1,6 @@
-
-
 $(document).ready(function() {
 
-  // Excercise 1: Flickr feed
-  var option=0;
+  var option=1;
 
 	if (option==1) {
 
@@ -12,9 +9,9 @@ $(document).ready(function() {
    	 	url: "FAQdatabase.js",
    	 	dataType: "json",
    	 	success: function(responseData, status){
-   	  	var output = "<p2>";
+   	  	var output = "";
     	 	$.each(responseData.items, function(i, item) {
-       		output += item.question + item.answer
+       		output += '<p2>' + item.question + '<br>' + item.answer + '<br>' + '</p2>' + '<hr>';
       	});
       	output += "</p2>";
       	$('#questionAnswer').html(output);
@@ -24,3 +21,4 @@ $(document).ready(function() {
     	}
   	});
 	}
+});
