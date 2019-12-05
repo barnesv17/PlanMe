@@ -106,7 +106,7 @@ function getParameterByName(name, url) {                                        
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
-$(document).ready(function() {                                                  // On the documents intial load...
+$(document).ready(function() {                                                  // On the document's intial load...
   var dateOp = getParameterByName('Date');                                      // Use the URL parser to get the date entered by the user
   var priceOp = getParameterByName('Price');                                    // Use the URL parser to get the price limit entered by the user
   var capacityOp = getParameterByName('Capacity');                              // Use the URL parser to get the capcity entered by the user

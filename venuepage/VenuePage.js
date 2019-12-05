@@ -8,7 +8,7 @@ function getParameterByName(name, url) {                                        
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
-$(document).ready(function() {                                                  // On the documents intial load...
+$(document).ready(function() {                                                  // On the document's intial load...
   var venueName = getParameterByName('Title');                                  // Use the URL parser to get the venueName clicked on on the searchPage
 
   $.ajax({                                                                      // API for reading in JSON files
