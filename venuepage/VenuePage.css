@@ -51,3 +51,16 @@ a {
   padding: 10px 0px; /*1:height, 2:width */
   border-bottom-style: solid;
 }
+
+
+.button1 {
+  margin-left: 20px
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
