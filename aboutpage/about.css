@@ -12,14 +12,59 @@ body {
 
 #box {
   border-width: medium;
-  height: 200px;
+  height: 250px;
   width: 150%;
   margin-left: 37.25%;
 }
 
+.bio {
+  text-align: center;
+  width: 300px;
+}
+
+img {
+  width: 100px;
+  height: 300px;
+  float: left;
+}
+
+#text {
+  margin-left: 3%;
+  /* background-color: blue; */
+}
+
+.member {
+  border-width: medium;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 20px;
+  height: 500px;
+  width: 150%;
+}
+
+#bios {
+  margin-left: 50px;
+}
+
 h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
   color: #e3e3e3;
-  margin-left: 46%;
+  text-align: center;
+}
+
+h2 {
+  color: #e3e3e3;
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+}
+
+p {
+  color: #e3e3e3;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+
+  text-align: center;
 }
 
 h3 {
