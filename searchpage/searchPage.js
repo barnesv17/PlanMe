@@ -4,7 +4,7 @@ function filter() {
   var capacityOp = document.getElementById("Capacity").value;                   // Extract the user's capcity from the search page (could be prefilled from homepage)
   var sortOp = document.getElementById("Sort").value;                           // Extract the user's sort option from the search page
 
-  $.ajax({                                                                      // API for reading JSON files
+  $.ajax({                                                                      // API for reading in JSON files
     type: 'GET',                                                                // GET Request
     url: '../resources/database.js',                                            // The path to the JSON file containing a list of venues
     dataType: 'json',                                                           // The file is of the type JSON
@@ -67,7 +67,7 @@ function filter() {
             output += '<a href='+ url +'><span id ="title">' + new_title;       // Insert the title of the venue that includes the link to the venue page
             output += '</span></a><br>';
             output += '<span id="address">' + item.address + '</span><br>';     // Insert the address of the venue
-            output += '<span id="number">' + item.number + '</span><br>';       // Insert the number of the venue
+            output += '<span id="number">' + item.number + '</span><br>';       // Insert the phone number of the venue
             if ( item.website == "Website not found" ) {                        // If the venue does not have a website...
               output += item.website + '<br>';                                  // Output the "website" without a hyperlink to it
             }
