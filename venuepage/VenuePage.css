@@ -1,53 +1,50 @@
-body {
-  background-color: #7395ae;
+body {                                                                          /* The entire page */
+  background-color: #7395ae;                                                    /* Light blue background color */
 }
 
-.venueOutput {
-  margin-top: 8%;
-  margin-left: 3%;
+.venueOutput {                                                                  /* The information outputted for the venue */
+  margin-top: 8%;                                                               /* Moves the content down as the % increases */
+  margin-left: 3%;                                                              /* Moves the content to the right as the % increases */
 }
 
-img {
-  width:750px;
-  height: 400px;
-  float: left;
+img {                                                                           /* The image of the venue */
+  width:750px;                                                                  /* Set the width */
+  height: 400px;                                                                /* Set the height */
+  float: left;                                                                  /* Float to the left of the venue text information */
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  color: #e3e3e3;
-  text-align: center;
+h1 {                                                                            /* Venue title */
+  font-family: 'Playfair Display', serif;                                       /* Change the font */
+  font-weight: bold;                                                            /* Change the font to be bold */
+  color: #e3e3e3;                                                               /* Change the font color */
+  text-align: center;                                                           /* Center the title */
 }
 
-p {
-  color: #e3e3e3;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
-  text-align: center;
+p {                                                                             /* Text information about the venue */
+  font-family: 'Source Sans Pro', sans-serif;                                   /* Change the font */
+  color: #e3e3e3;                                                               /* Change the font color */
+  font-size: 20px;                                                              /* Change the font size */
+  text-align: center;                                                           /* Center the text */
 }
 
-a {
-  color: #b0e9ff;
+a {                                                                             /* Hyperlinks (venue website) */
+  color: #b0e9ff;                                                               /* Keep the website link the white font color */
 }
 
-#text {
-  margin-left: 3%;
-  /* background-color: blue; */
+#price {                                                                        /* Price of the venue */
+  color: #7bd96c;                                                               /* Change the color to a green */
+  font-size: 20px;                                                              /* Make the font size bigger */
 }
 
-#price {
-  color: #7bd96c;
-  font-size: 20px;
+
+.button1 {
+  margin-left: 20px
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
 }
 
-#website {
-  color: #b0e9ff;
-  text-decoration: underline;
-}
-
-#item {
-  align-items:center;
-  padding: 10px 0px; /*1:height, 2:width */
-  border-bottom-style: solid;
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
 }

@@ -2,31 +2,29 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../resources/header.css"> <!--Stylesheet just for the header-->
     <link rel="stylesheet" href="searchPage.css">
-    <link rel="stylesheet" href="searchPageSideNav.css">
-    <link rel="stylesheet" href="../resources/header.css">
+    <link rel="stylesheet" href="searchPageSideNav.css"> <!--Stylesheet just for the SideNavigationBar-->
     <script type="text/javascript" src="../resources/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="searchPage.js"></script>
-    <title>searchPage Virginia Barnes</title>
+    <title>Search Page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-
   </head>
-
+  
   <body>
 
-    <div class="header">
-      <a href="../homepage.html" class="logo">PlanMe</a>
+    <div class="header"> <!--Header content-->
+      <a href="../homepage.html" class="logo">PlanMe</a> <!--Logo goes here-->
       <div class="headerWords">
-        <a href="../aboutpage/about.html">About Us</a>
-        <a href="../FAQpage/FAQpage.html">FAQ</a>
+        <a href="../aboutpage/about.html">About Us</a> <!--Link to the About Page-->
+        <a href="../FAQpage/FAQpage.html">FAQ</a> <!--Link to the FAQs Page-->
       </div>
     </div>
 
-    <div class="sidenav">
-      <div class="filter">Filter</div>
-      <!-- <a><form>Location:<input type="text" name="location"></a> -->
-      <a><form>Date:<input type="date" id="Date" onchange="filter()"></a>
-      <a>Capacity:<select id = "Capacity" onchange="filter()">
+    <div class="sidenav"> <!--Begin displaying the side navigation bar-->
+      <div class="filter">Filter</div> <!--Side Navigation "Title"-->
+      <a><form>Date:<input type="date" id="Date" onchange="filter()"></a> <!--User inputs the date they want for their event, recalls the filter function when changed-->
+      <a>Capacity:<select id = "Capacity" onchange="filter()"> <!--User inputs the capacity they want for their event, recalls the filter function when changed-->
         <option value = "0">(select capacity)</option>
         <option value = "1">100+</option>
         <option value = "2">200+</option>
@@ -34,7 +32,7 @@
         <option value = "4">400+</option>
         <option value = "5">500+</option>
       </select></a>
-      <a>Price:<select id = "Price" onchange="filter()">
+      <a>Price:<select id = "Price" onchange="filter()"> <!--User inputs the price they want for their event, recalls the filter function when changed-->
         <option value = "0">(select price)</option>
         <option value = "1">Below $100</option>
         <option value = "2">Below $200</option>
@@ -49,10 +47,10 @@
       </select></a>
     </div>
 
-    <div class="topLine">
-      <a id="search"><div class="resultCount"></div><a>
+    <div class="topLine"> <!--Holds the number of search results, and the sort filter-->
+      <a id="search"><div class="resultCount"></div><a> <!--Fill the resultCount from searchpage.js-->
       <a id = "ViewSort">
-        <a id="sort">Sort: <select id ="Sort" onchange="filter()">
+        <a id="sort">Sort: <select id ="Sort" onchange="filter()"> <!--Display the Sort filter, recalls the filter() function when changed-->
           <option value = "0">(select sort)</option>
           <option value = "3">A-Z</option>
           <option value = "4">Z-A</option>
@@ -62,7 +60,7 @@
       </a>
     </div>
 
-    <div class ="searchOutput"></div>
+    <div class ="searchOutput"></div> <!--Fill the searchoutput with venues that fit the users' filters from searchpage.js-->
 
   </body>
 </html>

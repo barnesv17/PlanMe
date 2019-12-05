@@ -14,35 +14,33 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!--importing w3 css from online-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--importing fonts from cloudflare-->
-    <title>FAQ Page Kenneth Lee</title>
+    <link rel="stylesheet" href="../resources/header.css"> <!--Stylesheet just for the header-->
+    <link rel="stylesheet" href="FAQPage.css">
+    <script type="text/javascript" src="../resources/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="FAQpage.js"></script>
+    <title>FAQ Page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
   </head>
-
   <body>
-    <!--banner on top of all pages-->
-    <div class="header">
-      <a href="../homepage.html" class="logo">PlanMe</a>
+
+    <div class="header"> <!--Header content-->
+      <a href="../homepage.html" class="logo">PlanMe</a> <!--Logo goes here-->
       <div class="headerWords">
-        <a href="../aboutpage/about.html">About Us</a>
-        <a href="#">FAQ</a>
-        <a href="../policypage/PolicyPage.html">Policy</a>
+        <a href="../aboutpage/about.html">About Us</a> <!--Link to the About Page-->
+        <a href="#">FAQ</a> <!--Link to the FAQs Page-->
       </div>
     </div>
 
     <div class="FAQ">
-      <h1>FAQ</h1>
+      <h1>FAQ</h1> <!--"Title" for the FAQ Page-->
       <div class="searchBar">
-        Search
-        <div class="searchButton"><i class="fa fa-search"></i></div>
-        <!--importing the search icon from w3school-->
+        <p1>Search</p1>  <!--Begin formatting search bar-->
+        <div class="searchButton"><i class="fa fa-search"></i></div>  <!--Display the search button-->
       </div>
-      <div class="scroller"> <!--have a scroller for all the FAQ-->
-        <div id="questionAnswer">
-        </div>
+      <div class="scroller">
+        <div id="questionAnswer"></div>  <!--Fill the output with Q&A's from FAQpage.js-->
       </div>
-    </div>
 
   </body>
 </html>

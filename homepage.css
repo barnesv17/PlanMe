@@ -1,92 +1,57 @@
-body {
-  background-color: #7395ae;
-}
-/*changing background to light blue*/
-
-.field {
-  width: 80px;
-  margin-top: 10px;
-  margin-right: 5px;
-  float: left;
-  clear: left;
-  text-align: right;
-}
-/*styling the input fields to input date, capacity and price range*/
-
-#description{
-  margin-top: 150px;
-  margin-left: 250px;
-}
-/*layout for the description box*/
-
-#box {
-  #border-style: solid;
-  #border-width: medium;
-  height: 225px;
-  width: 450px;
-  float: left;
-  margin-top: 15px;
-  padding-left: 10px;
-}
-/*styling for the description box*/
-
-#searchBox {
-  border-style: solid;
-  border-color: #bababa;
-  border-width: medium;
-  border-radius: 25px;
-  background-color: #e3e3e3;
-  height: 200px;
-  width: 400px;
-  margin-right: 200px;
-  margin-top: 10px;
-  float: right;
-  text-align: center;
-}
-/*styling the search box and layout*/
-
-.value {
-  margin-top: 10px;
-}
-/*spacing in between each input field in the search box*/
-
-input:focus{
-  border: 1px solid #a0acbf;
+body {                                                                          /* The entire page */
+  background-color: #7395ae;                                                    /* Light blue background color */
 }
 
-select:focus{
-  border: 1px solid #a0acbf;
-}
-/*changes the color of the input field when user selects the field*/
-
-#slogan {
-  font-size: 30px;
+#description {                                                                  /* Blurb about our web application INCLUDING THE SLOGAN */
+  margin-top: 10%;                                                              /* Moves the content down as the % increases */
+  margin-left: 16%;                                                             /* Moves the content to the right as the % increases */
 }
 
-
-#slogan {
-  font-size: 30px;
+h3 {                                                                            /* All of the text in the blurb about our web application INCLUDING THE SLOGAN */
+  color: #e3e3e3;                                                               /* Change the font color */
+  width: 400px;                                                                 /* Set the width of the text box */
+  text-align: center;                                                           /* Align the text center */
 }
 
-
-h1 {
-  color: #e3e3e3;
-  margin-left: 37.25%;
-  font-family: 'Playfair Display', serif;
+#slogan {                                                                       /* Just the slogan of the web application */
+  font-family: 'Playfair Display', serif;                                       /* Change the font */
+  font-size: 30px;                                                              /* Make the font size bigger */
 }
-/*redefining h1tag, changing font, color and spacing*/
 
-h3 {
-  color: #e3e3e3;
-  width: 400px;
-  text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+#box {                                                                          /* Just the blurb about our web application */
+  font-family: 'Source Sans Pro', sans-serif;                                   /* Change the font */
+  height: 225px;                                                                /* Change the height of the text box */
+  width: 450px;                                                                 /* Change the width of the textbox */
+  float: left;                                                                  /* Keeps the text box aligned to the left of the searchBox */
+  margin-top: 0.5%;                                                             /* Increases the space between the text box and the title as the % increases */
 }
-/*redefining h3tag, changing font, color, width and text align*/
+
+#searchBox {                                                                    /* Searchbox contains filters and go button */
+  border-style: solid;                                                          /* Add a border around the searchbox */
+  border-color: #bababa;                                                        /* Make the border of the searchbox a darker grey */
+  border-radius: 25px;                                                          /* Make the edges of the searchbox curved */
+
+  background-color: #e3e3e3;                                                    /* Light grey background of the searchbox */
+  height: 200px;                                                                /* Change the height of the text box */
+  width: 400px;                                                                 /* Change the width of the textbox */
+  margin-right: 15%;                                                            /* Moves the searchbox to the left as the % increases */
+  margin-top: 0.3%;                                                             /* Moves the searchbox down as the % increases */
+  float: right;                                                                 /* Keeps the searchbox aligned to the right of the text box blurb */
+
+  text-align: center;                                                           /* Center alignes the filters/text within the searchbox */
+  font-family: 'Source Sans Pro', sans-serif;                                   /* Change the font */
+}
 
 #button {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
-  border-radius: 10px;
+  font-family: 'Source Sans Pro', sans-serif;                                   /* Change the font */
+  font-size: 20px;                                                              /* Center alignes the filters/text within the searchbox */
+  border-radius: 10px;                                                          /* Make the edges of the button curved */
 }
-/*styling the go button in the searchBox*/
+
+input:focus {                                                                   /* When an input (Date) is being used by the user */
+  border: 1px solid #a0acbf;                                                    /* Make the border of that input thicker and blue */
+}
+
+select:focus {                                                                  /* When a select (Capcity, Price) is being used by the user */
+  border: 1px solid #a0acbf;                                                    /* Make the border of that select thicker and blue */
+}

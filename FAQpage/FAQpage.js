@@ -1,26 +1,18 @@
+$(document).ready(function() {                                                  // On the document's initial load
+	$.ajax({                                                                      // API for reading in JSON files
+ 	 	type: "GET",                                                                // GET Request
+ 	 	url: "FAQdatabase.js",                                                      // The path to the JSON file containing a list of venues
+ 	 	dataType: "json",                                                           // The file is of the type JSON
+ 	 	success: function(responseData, status){                                    // On success...
 
-
-$(document).ready(function() { //runs when the page is loaded
-
-  var option=1;
-
-	if (option==1) {
-
-  	$.ajax({
-   	 	type: "GET",
-   	 	url: "FAQdatabase.js",
-   	 	dataType: "json",
-   	 	success: function(responseData, status){ //this code runs if there are no errors
-        var output = "";
-    	 	$.each(responseData.items, function(i, item) { //searching through each item in the database of FAQ (FAQdatabase.js)
-       		output += '<p2>' + item.question + '<br>' + item.answer + '<br>' + '</p2>' + '<hr>';
-          //code that is going to go into the html file and create the format needed
-      	});
-      	$('#questionAnswer').html(output); //outputs the html code to the div block ID questionAnswer in FAQpage.html
-    	}, error: function(msg) { //error checking to ensure it is running smoothlys
-      				// there was a problem
-      	alert("There was a problem: " + msg.status + " " + msg.statusText);
-    	}
-  	});
-	}
+ 	  	var output = "";                                                          // String to store the HTML we want to output
+  	 	$.each(responseData.items, function(i, item) {                            // Loop through each item in the JSON file
+     		output += '<p2>' + item.question + '<br>' + item.answer;                // Insert the question and answer from the item
+        output += '<br>' + '</p2>' + '<hr>';
+    	});
+    	$('#questionAnswer').html(output);                                        // Output to FAQpage.html
+  	}, error: function(msg) {                                                   // If something went wrong with the JSON file...
+    	alert("There was a problem: " + msg.status + " " + msg.statusText);       // Alert that there was a problem
+  	}
+	});
 });

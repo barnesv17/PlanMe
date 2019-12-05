@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="/https:fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-    <!--importing fonts from google-->
-    <link rel="stylesheet" href="resources/header.css">
-    <!--linking to css file to create the banner-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/header.css"> <!--Stylesheet just for the header-->
     <link rel="stylesheet" href="homepage.css">
-    <!--linking to the css file for the overall layout of page-->
-    <title>Homepage Kenneth Lee/Virginia Barnes</title>
+    <title>Home Page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-
   </head>
+  
   <body>
 
     <div class="header"> <!--Header content-->
@@ -18,7 +15,6 @@
       <div class="headerWords">
         <a href="aboutpage/about.html">About Us</a> <!--Link to the About Page-->
         <a href="FAQpage/FAQpage.html">FAQ</a> <!--Link to the FAQs Page-->
-        <a href="policypage/PolicyPage.html">Policy</a> <!--Link to the FAQs Page-->
       </div>
     </div>
 
@@ -26,30 +22,29 @@
       <h3><div id="slogan">Plan your event with PlanMe</div></h3> <!--Slogan-->
       <div id="box"> <!--Paragraph of description of Web App-->
         <h3>
-        Are you planning a big event? A party, formal, or wedding? Well, you have come to the
-        right place. PlanMe gives you the ability to filter through venues in Troy, NY. No more
-        calling venue after venue to see who is available. Filter venues based off price, capacity,
-        and available dates so you can find the ideal venue for your occasion.
-      </h3> <!--description of PlanMe-->
+          Are you planning a big event? A party, formal, or wedding? Well, you have come to the
+          right place. PlanMe gives you the ability to filter through venues in Troy, NY. No more
+          calling venue after venue to see who is available. Filter venues based off price, capacity,
+          and available dates so you can find the ideal venue for your occasion.
+        </h3>
       </div>
     </div>
 
-    <div id="searchBox">
-      <form action="searchpage/searchPage.html" method="GET"> <!--send all this information to searchPage.html-->
-        Date: <input type="date" name="Date" id="Date">
-        <!--gives the user an option to select date on a calendar-->
+    <div id="searchBox"> <!--User can begin search for venues-->
+      <form action="searchpage/searchPage.html" method="GET"> <!--Will send form data to searchpage.html-->
+        <br> <!--newline-->
+        <a id="date">Date: <input type="date" name="Date" id="Date"></a> <!--User inputs the date they want for their event-->
         <br><br>
-        Capacity: <select id="Capacity" name="Capacity">
+        <a id="capacity">Capacity: <select id="Capacity" name="Capacity"> <!--User inputs the capacity they want for their event-->
           <option value = "0">(select capacity)</option>
           <option value = "1">100+</option>
           <option value = "2">200+</option>
           <option value = "3">300+</option>
           <option value = "4">400+</option>
           <option value = "5">500+</option>
-        </select>
-        <!--A dropbar to filter out the size of the venue-->
+        </select></a>
         <br><br>
-        Price: <select id ="Price" name="Price">
+        <a id="price">Price: <select id ="Price" name="Price"> <!--User inputs the price they want for their event-->
           <option value = "0">(select price)</option>
           <option value = "1">Below $100</option>
           <option value = "2">Below $200</option>
@@ -61,8 +56,7 @@
           <option value = "8">Below $800</option>
           <option value = "9">Below $900</option>
           <option value = "10">Below $1000</option>
-        </select>
-        <!--A dropbar to filter out the size of the venue-->
+        </select></a>
         <br><br>
         <input id="button" type="submit" value="Go"/> <!--Submit the form information and redirect to searchpage.html-->
       </form>
