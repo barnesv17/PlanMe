@@ -17,19 +17,20 @@ body {
   margin-left: 37.25%;
 }
 
-.bio {
-  text-align: center;
-  width: 300px;
-}
 
 img {
-  width: 100px;
-  height: 300px;
+  width: 200px;
+  height: 600px;
+  float: left;
+}
+
+.pic {
   float: left;
 }
 
 #text {
   margin-left: 3%;
+  text-align: center;
   /* background-color: blue; */
 }
 
@@ -44,6 +45,7 @@ img {
 
 #bios {
   margin-left: 50px;
+  text-align: center;
 }
 
 h1 {
