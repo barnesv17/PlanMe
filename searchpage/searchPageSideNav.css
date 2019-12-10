@@ -1,55 +1,59 @@
 /* Based off of https://www.w3schools.com/howto/howto_js_sidenav.asp */
 
-.sidenav { /*the "box" of the sidenav */
-  width: 250px;
-  height: 500px;
-  position: fixed;
-  z-index: 1;
-  top: 63px; /* move sidenav up or down */
-  overflow-x: hidden;
-  padding: 8px 0;
+.sidenav {                                                                      /*the "box" of the sidenav */
+  width: 250px;                                                                 /* Set the width */
+  height: 500px;                                                                /* Set the height */
+  position: fixed;                                                              /* Keep the position fixed no matter the page size/scroll */                                                                   */
+  top: 63px;                                                                    /* move sidenav up or down */
+  overflow-x: hidden;                                                           /* Hide any overflow in the x direction */
+  padding: 8px 0;                                                               /* 1:height 2:width */
 }
 
-.sidenav a {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 15px;
-  display: block;
-  color: #e3e3e3;
+.sidenav #a1 {                                                                    /* Each item in the side nav */
+  font-family: 'Source Sans Pro', sans-serif;                                   /* Set the font */
+  padding: 6px 8px 6px 16px;                                                    /* Set padding around each item */
+  text-decoration: none;                                                        /* No text decoration */
+  font-size: 15px;                                                              /* Set the font size */
+  display: block;                                                               /* Display to block */
+  color: #e3e3e3;                                                               /* Set the color */
+}
+.sidenav #a2 {                                                                    /* Each item in the side nav */
+  font-family: 'Source Sans Pro', sans-serif;                                   /* Set the font */
+  padding: 6px 8px 6px 16px;                                                    /* Set padding around each item */
+  text-decoration: none;                                                        /* No text decoration */
+  font-size: 15px;                                                              /* Set the font size */
+  display: block;                                                               /* Display to block */
+  color: #e3e3e3;                                                               /* Set the color */
+}
+.sidenav #a3 {                                                                    /* Each item in the side nav */
+  font-family: 'Source Sans Pro', sans-serif;                                   /* Set the font */
+  padding: 6px 8px 6px 16px;                                                    /* Set padding around each item */
+  text-decoration: none;                                                        /* No text decoration */
+  font-size: 15px;                                                              /* Set the font size */
+  display: block;                                                               /* Display to block */
+  color: #e3e3e3;                                                               /* Set the color */
 }
 
-.sidenav input {
-  font-family: 'Source Sans Pro', sans-serif;
-  position: fixed;
-  left: 90px;
-  width: 148px;
+.sidenav input {                                                                /* Each input item in the side nav */
+  font-family: 'Source Sans Pro', sans-serif;                                   /* Set the font */
+  position: fixed;                                                              /* Keep the position fixed no matter the page size/scroll */
+  left: 90px;                                                                   /* Move right as number increases */
+  width: 148px;                                                                 /* Set the width */
 }
 
-.sidenav select {
-  font-family: 'Source Sans Pro', sans-serif;
-  position: fixed;
-  left: 90px;
-  width: 153px;
-  height: 23px;
+.sidenav select {                                                               /* Each select item in the side nav */
+  font-family: 'Source Sans Pro', sans-serif;                                   /* Set the font */
+  position: fixed;                                                              /* Keep the position fixed no matter the page size/scroll */
+  left: 90px;                                                                   /* Move right as number increases */
+  width: 153px;                                                                 /* Set the width */
+  height: 23px;                                                                 /* Set the height */
 }
 
-.sidenav .filter {
-  font-family: 'Playfair Display', serif;
-  color: #e3e3e3;
-  text-align: center;
-  font-size: 25px;
-  text-decoration: none;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.main {
-  margin-left: 140px;                                                           /* Same width as the sidebar + left position in px */
-  font-size: 28px;                                                              /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 500px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.sidenav .filter {                                                              /* Filter label above the actual filters */
+  font-family: 'Playfair Display', serif;                                       /* Set the font */
+  color: #e3e3e3;                                                               /* Set the color */
+  text-align: center;                                                           /* Align in center */
+  font-size: 25px;                                                              /* Set the font size */
+  text-decoration: none;                                                        /* No text decoration */
+  border-bottom: 1px solid #e0e0e0;                                             /* Add a border underneath */
 }
