@@ -9,7 +9,17 @@ body {                                                                          
   left: 255px;                                                                  /* Moves right as the number increases */
 }
 
-.topLine a {                                                                    /* Each item in the topline */
+.topLine #sort {                                                                    /* Each item in the topline */
+  font-family: 'Source Sans Pro', sans-serif;                                   /* Set the font */
+  float: left;                                                                  /* Align each item to the left */
+  color: #e3e3e3;                                                               /* Set the font color */
+  text-align: center;                                                           /* Align the text in the center */
+  padding: 12px;                                                                /* Put space between each item */
+  text-decoration: none;                                                        /* No text decoration (underline) */
+  font-size: 18px;                                                              /* Set the font size */
+  line-height: 25px;                                                            /* Set the height of the line */
+}
+.topLine #search {                                                                    /* Each item in the topline */
   font-family: 'Source Sans Pro', sans-serif;                                   /* Set the font */
   float: left;                                                                  /* Align each item to the left */
   color: #e3e3e3;                                                               /* Set the font color */

@@ -25,16 +25,16 @@
     <div class="sidenav"> <!--Begin displaying the side navigation bar-->
       <div class="filter">Filter</div> <!--Side Navigation "Title"-->
       <form>
-        <a>Date:<input type="date" id="Date" onchange="filter()"></a> <!--User inputs the date they want for their event, recalls the filter function when changed-->
-        <a>Capacity: <select id = "Capacity" onchange="filter()"> <!--User inputs the capacity they want for their event, recalls the filter function when changed-->
+        <div id="a1">Date:<input type="date" id="Date" onchange="filter()"></div> <!--User inputs the date they want for their event, recalls the filter function when changed-->
+        <div id="a2">Capacity: <select id = "Capacity" onchange="filter()"> <!--User inputs the capacity they want for their event, recalls the filter function when changed-->
           <option value = "0">(select capacity)</option>
           <option value = "1">100+</option>
           <option value = "2">200+</option>
           <option value = "3">300+</option>
           <option value = "4">400+</option>
           <option value = "5">500+</option>
-        </select></a>
-        <a>Price:<select id = "Price" onchange="filter()"> <!--User inputs the price they want for their event, recalls the filter function when changed-->
+        </select></div>
+        <div id="a3">Price:<select id = "Price" onchange="filter()"> <!--User inputs the price they want for their event, recalls the filter function when changed-->
           <option value = "0">(select price)</option>
           <option value = "1">Below $100</option>
           <option value = "2">Below $200</option>
@@ -46,19 +46,19 @@
           <option value = "8">Below $800</option>
           <option value = "9">Below $900</option>
           <option value = "10">Below $1000</option>
-        </select></a>
+        </select></div>
       </form>
     </div>
 
     <div class="topLine"> <!--Holds the number of search results, and the sort filter-->
-      <a id="search"><div class="resultCount"></div></a> <!--Fill the resultCount from searchpage.js-->
-        <a id="sort">Sort: <select id ="Sort" onchange="filter()"> <!--Display the Sort filter, recalls the filter() function when changed-->
+      <div id="search"><div class="resultCount"></div></div> <!--Fill the resultCount from searchpage.js-->
+        <div id="sort">Sort: <select id ="Sort" onchange="filter()"> <!--Display the Sort filter, recalls the filter() function when changed-->
           <option value = "0">(select sort)</option>
           <option value = "3">A-Z</option>
           <option value = "4">Z-A</option>
           <option value = "1">Price: Low to High</option>
           <option value = "2">Price: High to Low</option>
-        </select></a>
+        </select></div>
     </div>
 
     <div class ="searchOutput"></div> <!--Fill the searchoutput with venues that fit the users' filters from searchpage.js-->

@@ -9,7 +9,23 @@
   padding: 8px 0;                                                               /* 1:height 2:width */
 }
 
-.sidenav a {                                                                    /* Each item in the side nav */
+.sidenav #a1 {                                                                    /* Each item in the side nav */
+  font-family: 'Source Sans Pro', sans-serif;                                   /* Set the font */
+  padding: 6px 8px 6px 16px;                                                    /* Set padding around each item */
+  text-decoration: none;                                                        /* No text decoration */
+  font-size: 15px;                                                              /* Set the font size */
+  display: block;                                                               /* Display to block */
+  color: #e3e3e3;                                                               /* Set the color */
+}
+.sidenav #a2 {                                                                    /* Each item in the side nav */
+  font-family: 'Source Sans Pro', sans-serif;                                   /* Set the font */
+  padding: 6px 8px 6px 16px;                                                    /* Set padding around each item */
+  text-decoration: none;                                                        /* No text decoration */
+  font-size: 15px;                                                              /* Set the font size */
+  display: block;                                                               /* Display to block */
+  color: #e3e3e3;                                                               /* Set the color */
+}
+.sidenav #a3 {                                                                    /* Each item in the side nav */
   font-family: 'Source Sans Pro', sans-serif;                                   /* Set the font */
   padding: 6px 8px 6px 16px;                                                    /* Set padding around each item */
   text-decoration: none;                                                        /* No text decoration */
