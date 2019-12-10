@@ -3,18 +3,15 @@ font-family: 'Playfair Display', serif;
 text-align: center;
 font-size: 36px;
 color: white;
-
-
 }
+
 body {
-
 	background-color: #7395ae;
-
 }
+
 p {
 	text-align: center;
 	color: white;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
-
 }
