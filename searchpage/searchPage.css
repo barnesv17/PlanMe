@@ -1,82 +1,75 @@
-body {
-  margin: 0;
-  background-color: #7395ae;
+body {                                                                          /* The entire page */
+  background-color: #7395ae;                                                    /* Light blue background color */
 }
 
-.topLine {
-  overflow: hidden;
-  padding: 5px 389px; /*1:height, 2:width */
-  top: 63px;
-  left: 255px;
+.topLine {                                                                      /* Search result number and sort drop down */
+  overflow: hidden;                                                             /* Keeps the search results below this line */
+  padding: 5px 389px;                                                           /* 1:height, 2:width */
+  top: 63px;                                                                    /* Moves down as the number increases */
+  left: 255px;                                                                  /* Moves right as the number increases */
 }
 
-.topLine a {
-  font-family: 'Source Sans Pro', sans-serif;
-  float: left;
-  color: #e3e3e3;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
+.topLine a {                                                                    /* Each item in the topline */
+  font-family: 'Source Sans Pro', sans-serif;                                   /* Set the font */
+  float: left;                                                                  /* Align each item to the left */
+  color: #e3e3e3;                                                               /* Set the font color */
+  text-align: center;                                                           /* Align the text in the center */
+  padding: 12px;                                                                /* Put space between each item */
+  text-decoration: none;                                                        /* No text decoration (underline) */
+  font-size: 18px;                                                              /* Set the font size */
+  line-height: 25px;                                                            /* Set the height of the line */
 }
 
-.header #search {
-  font-size: 25px;
-  font-weight: bold;
+#Date {                                                                         /* The Date filter */
+  width: 153px;                                                                 /* Set the width of the drop down box */
 }
 
-#Date {
-  width: 153px;
+#Sort {                                                                         /* The Sort filter */
+  height: 23px;                                                                 /* Set the height of the drop down box */
+  font-family: 'Source Sans Pro', sans-serif;                                   /* Set the font */
 }
 
-#Sort {
-  height: 23px;
-  font-family: 'Source Sans Pro', sans-serif;
+.searchOutput {                                                                 /* Search Result output of venue */
+  font-family: 'Source Sans Pro', sans-serif;                                   /* Set the font */
+  color: #e3e3e3;                                                               /* Set the font color */
+  padding: 5px 389px;                                                           /* 1:height, 2:width */
+  top: 300px;                                                                   /* Moves down as number increases */
+  left: 255px;                                                                  /* Moves right as number increases */
 }
 
-.searchOutput {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #e3e3e3;
-  padding: 5px 389px; /*1:height, 2:width */
-  top: 300px; /* move up or down */
-  left: 255px;
+.searchOutput #price {                                                          /* Price info in the venue search result */
+  color: #7bd96c;                                                               /* Make the font color green */
+  font-size: 20px;                                                              /* Make the font size bigger */
 }
 
-.searchOutput #price {
-  color: #7bd96c;
-  font-size: 20px;
+.searchOutput #title {                                                          /* Title of the venue in the search results */
+  font-family: 'Playfair Display', serif;                                       /* Set the font */
+  font-weight: bold;                                                            /* Make it bold */
+  font-size: 20px;                                                              /* Make the font size bigger */
 }
 
-.searchOutput #title {
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  font-size: 20px;
+.searchOutput #website {                                                        /* Website info in the venue search results */
+  text-decoration: underline;                                                   /* Underline the website */
 }
 
-.searchOutput #website {
-  text-decoration: underline;
+.searchOutput #item {                                                           /* Each venue is an item in the search results */
+  align-items:center;                                                           /* Align each item in the venue info in the center */
+  padding: 10px 0px;                                                            /* 1:height, 2:width */
+  border-bottom-style: solid;                                                   /* Place a line underneath each venue in the search results */
 }
 
-.searchOutput #item {
-  align-items:center;
-  padding: 10px 0px; /*1:height, 2:width */
-  border-bottom-style: solid;
+img {                                                                           /* Image of each venue */
+  float: left;                                                                  /* Float to the left of the venues text information */
+  margin-right: 1rem;                                                           /* Set the right margin */
+  width: 180px;                                                                 /* Set the width */
+  height: 100px;                                                                /* Set the height */
 }
 
-img {
-  float: left;
-  margin-right: 1rem;
-  width: 180px;
-  height: 100px;
+a {                                                                             /* Each hyperlink on the page */
+  color: #b0e9ff;                                                               /* Set the font color */
 }
-
-a {
-  color: #b0e9ff;
-}
-a:visited {
-  color: #b0e9ff;
+a:visited {                                                                     /* Each hyperlink that has been visited on the page */
+  color: #b0e9ff;                                                               /* Set the font color */
 }
 
 input:focus{
